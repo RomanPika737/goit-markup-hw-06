@@ -75,7 +75,8 @@
                   <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
                   <div class="form-field">
                     <label for="name" class="form-label">Ім'я</label>
-                    <input
+                    <div class="input-wrapper">
+                       <input
                       class="form-input"
                       type="text"
                       name="name"
@@ -86,17 +87,22 @@
                     <svg class="input-svg" width="18" height="18">
                       <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
+                    </div>
                   </div>
                   <div class="form-field">
                     <label for="tel" class="form-label">Телефон</label>
-                    <input class="form-input" type="tel" name="tel" id="tel" autocomplete="on" />
+                    <div class="input-wrapper">
+                       <input class="form-input" type="tel" name="tel" id="tel" 
+                       autocomplete="on" />
                     <svg class="input-svg" width="18" height="18">
                       <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
+                    </div>
                   </div>
                   <div class="form-field">
                     <label for="email" class="form-label">Пошта</label>
-                    <input
+                     <div class="input-wrapper">
+                      <input
                       class="form-input"
                       type="email"
                       name="email"
@@ -106,6 +112,7 @@
                     <svg class="input-svg" width="18" height="18">
                       <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
+                     </div>
                   </div>
                   <div class="form-field">
                     <label for="comment" class="form-label">Коментар</label>
@@ -116,17 +123,19 @@
                       placeholder="Введіть текст"
                     ></textarea>
                   </div>
-                  <div class="checkbox">
+                  <div class="checkbox check-field">
                     <input
-                    class="visually-hidden"
+                      class="visually-hidden"
                       type="checkbox"
                       name="privacy policy"
                       id="privacy policy"
+                      required
                     />
                     <label for="privacy policy" class="form-checkbox"
-                      ><span class="checkbox-agree"><svg class="checkbox-svg" width="16px" height="15px">
-                        <use href="./images/icons.svg#icon-icon-check"></use>
-                      </svg></span><span>Погоджуюся з розсилкою та приймаю</span>
+                      ><span class="checkbox-agree"
+                        ><svg class="checkbox-svg" width="16px" height="15px">
+                          <use href="./images/icons.svg#icon-icon-check"></use></svg></span
+                      ><span>Погоджуюся з розсилкою та приймаю</span>
                       <a href="" class="link"><span>Умови договору</span></a></label
                     >
                   </div>
@@ -241,28 +250,37 @@
               <div class="social-links">
                 <ul class="social-link list">
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.secure.instagram.com/accounts/login/?next=/popup_cxofficial/&source=desktop_nav&hl=uk" 
+                    class="link"
+                     rel="noopener nofollow noreferer"
+                    >
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+                     class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://uk-ua.facebook.com/" 
+                    class="link"
+                    rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.linkedin.com/login" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -278,28 +296,36 @@
               <div class="social-links">
                 <ul class="social-link list">
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.secure.instagram.com/accounts/login/?next=/popup_cxofficial/&source=desktop_nav&hl=uk" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://uk-ua.facebook.com/" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.linkedin.com/login" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -315,28 +341,36 @@
               <div class="social-links">
                 <ul class="social-link list">
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.secure.instagram.com/accounts/login/?next=/popup_cxofficial/&source=desktop_nav&hl=uk"
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://uk-ua.facebook.com/" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.linkedin.com/login" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -352,28 +386,36 @@
               <div class="social-links">
                 <ul class="social-link list">
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.secure.instagram.com/accounts/login/?next=/popup_cxofficial/&source=desktop_nav&hl=uk" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://uk-ua.facebook.com/" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-link-item">
-                    <a href="" class="link">
+                    <a href="https://www.linkedin.com/login" 
+                    class="link"
+                     rel="noopener nofollow noreferer">
                       <svg class="media-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -422,7 +464,9 @@
             <li class="client">
               <a href="" class="link">
                 <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-brand"></use></svg></a>
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
             </li>
             <li class="client">
               <a href="" class="link">
@@ -463,28 +507,36 @@
           <p class="footer-social">ПРИЄДНУЙТЕСЬ</p>
           <ul class="social-link list footer-item">
             <li class="social-link-item">
-              <a href="" class="link footer-link">
+              <a href="https://www.secure.instagram.com/accounts/login/?next=/popup_cxofficial/&source=desktop_nav&hl=uk" 
+              class="link footer-link"
+              rel="noopener nofollov noreferer">
                 <svg class="media-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link-item">
-              <a href="" class="link footer-link">
+              <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+               class="link footer-link"
+               rel="noopener nofollov noreferer">
                 <svg class="media-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link-item">
-              <a href="" class="link footer-link">
+              <a href="https://uk-ua.facebook.com/" 
+              class="link footer-link"
+              rel="noopener nofollow noreferer">
                 <svg class="media-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-link-item">
-              <a href="" class="link footer-link">
+              <a href="https://www.linkedin.com/login" 
+              class="link footer-link"
+              rel="noopener nofollow noreferer">
                 <svg class="media-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -496,20 +548,21 @@
           <p class="input-title"><strong>Підпишіться на розсилку</strong></p>
           <form class="form-footer">
             <div class="form-field-footer">
-                    <input
-                      class="form-input-footer"
-                      type="email"
-                      name="email"
-                      placeholder="E-mail"
-                      autocomplete="on"
-                    />
-                    
-                    <button type="submit" class=" footer-button button">Підписатися
-                      <svg class="input-svg-footer" width="24" height="24">
-                      <use href="./images/icons.svg#icon-icon-send"></use>
-                    </svg>
-                    </button>
-                  </div>
+              <input
+                class="form-input-footer"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                autocomplete="on"
+              />
+
+              <button type="submit" class="footer-button button">
+                Підписатися
+                <svg class="input-svg-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>

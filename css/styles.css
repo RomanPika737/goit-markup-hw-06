@@ -319,7 +319,7 @@ fill: var(--accent-color);
     
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
-            border: none;
+            border: transparent;
 
             transition: background-color
             var(--transition-duration)
@@ -409,6 +409,8 @@ fill: var(--accent-color);
     background: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
 
+        outline: none;
+
  }
 
  .modal .modal-icon {
@@ -419,8 +421,11 @@ fill: var(--accent-color);
     fill: var(--accent-color); */
  }
 
- .modal .modal-button:hover .modal-icon {
+ .modal .modal-button:hover .modal-icon,
+ .modal .modal-button:focus .modal-icon {
     fill: var(--accent-color);
+    
+    
  }
 /* 
  .modal .modal-icon:hover,
@@ -456,6 +461,10 @@ fill: var(--accent-color);
 
  }
 
+ .input-wrapper {
+     position: relative;
+ }
+
  .form-label {
     margin-bottom: 4px;
     margin-right: auto;
@@ -473,10 +482,14 @@ fill: var(--accent-color);
 
  .form-input {
     height: 40px;
+    width: 100%;
     padding-left: 42px;
     fill: var(--accent-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+        transition:
+        border-color var(--transition-duration) 
+        var(--transition-timing-function);
  }
 
  .input-svg {
@@ -484,7 +497,10 @@ fill: var(--accent-color);
     display: inline-block;
     left: 12px;
     top: 50%;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
+    transition:
+    fill var(--transition-duration) 
+    var(--transition-timing-function);
 
  }
 
@@ -503,6 +519,10 @@ fill: var(--accent-color);
     
     resize: none;
 
+    transition:
+            border-color var(--transition-duration)
+            var(--transition-timing-function);
+
  }
 
 .modal-textarea::placeholder {
@@ -515,39 +535,48 @@ fill: var(--accent-color);
 }
 
 
-.form-field:focus,
-.form-field:hover,
-.input-svg:hover,
+.form-input:hover + .input-svg,
+.form-input:focus + .input-svg {
+    fill: var(--accent-color);
+    outline: none;
+}
+
+/* .input-svg:hover,
 .input-svg:focus {
-   
     fill: var(--accent-color);
-    outline: none;
-}
+} */
 
-.form-input:hover,
-.form-input:focus {
+.form-input:hover, .modal-textarea:hover,
+.form-input:focus, .modal-textarea:focus {
     border-color: var(--accent-color);
-    fill: var(--accent-color);
     outline: none;
 
 }
+
 .checkbox {
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* justify-content: center; */
-
-   
-}
-
-.checkbox-agree {
-    display: block;
-    margin-right: 8px;
-    line-height: 0;
 }
 
 .form-checkbox {
     display: flex;
     align-items: center;
+}
+
+
+
+.form-checkbox .checkbox-agree{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+
+    margin-right: 8px;
+    width: 16px;
+        height: 15px;
+        border: 2px solid var(--black-icon-color);
+        border-radius: 2px;
+   
     /* width: 16px;
     height: 15px; */
     font-weight: 400;
@@ -558,13 +587,39 @@ fill: var(--accent-color);
         letter-spacing: 0.03em;
     
         color: var(--main-text-color);
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
+        
+}
+
+.form-checkbox .checkbox-svg {
+    fill: transparent;
+    transition:
+            fill var(--transition-duration)
+             var(--transition-timing-function);
+    /* stroke: transparent; */
+}
+
+.check-field input:checked + .form-checkbox .checkbox-agree {
+    background-color: var(--accent-color);
+        border: none;
+
+    transition: 
+    background-color var(--transition-duration)
+     var(--transition-timing-function),
+    fill var(--transition-duration)
+    var(--transition-timing-function);
+    
 }
 
 .checkbox .link {
-    margin-left: 5px;
+    margin-left: 4px;
+    text-underline-position: under;
     color: var(--accent-color);
 }
+/* 
+.check-field input:checked+.form-checkbox .checkbox-svg {
+    stroke:var(--background-color);
+} */
 
  /* Features */
 
@@ -1164,32 +1219,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     margin-right: 0;
 
 } */
-/* 
-.all {
-    padding: 6px 25px;
-    margin-right: 8px;
-    min-width: 73px;
-}
 
-.web-sites {
-    margin-right: 8px;
-    min-width: 125px;
-}
-
-.applications {
-    margin-right: 8px;
-    min-width: 112px;
-}
-
-.design {
-    margin-right: 8px;
-    min-width: 103px;
-}
-
-.marketing {
-    margin-right: 0;
-    min-width: 130px;
-} */
 
 .portfolio-title {
         width: 322px;
