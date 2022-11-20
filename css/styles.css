@@ -392,10 +392,10 @@ fill: var(--accent-color);
     align-items: center;
     justify-content: center;
     font-family: inherit;
-    padding: 0;
+    padding: 8px;
     margin: 0;
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
 
     border-radius: 50%;
     cursor: pointer;
@@ -405,7 +405,7 @@ fill: var(--accent-color);
     background: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
 
-        outline: none;
+        /* outline: none; */
 
  }
 
